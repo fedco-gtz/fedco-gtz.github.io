@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	background: #f2f2f2;
+}
+
+/* * ============================== */
+/* * ============ HEADER ========== */
+/* * ============================== */
+
+.navbar {
+	background: #48daff;
+	position: sticky;
+	top: 0;
+}
+
+.navbar a {
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	transition: .3s ease-out all;
+}
+
+.navbar a:hover {
+	background: #1D2F3D;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* * ============================== */
+/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ============================== */
+
+.contenedor-imagen {
+	background-image: url(https://humanidades.com/wp-content/uploads/2018/10/matematicas-e1581735212109.jpg);
+	background-size: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: x-large
+}
+
+.contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+
+/* * ============================== */
+/* * ============ MAIN ============ */
+/* * ============================== */
+
+main {
+	min-height: 100vh;
+}
+
+main .contenido p {
+	margin-bottom: 20px;
+	line-height: 30px;
+	color: #525151;
+}
+
+main .contenido .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	padding-top: 40px;
+}
+
+main .contenido .fecha {
+	font-size: 14px;
+	color: #B5B5B5;
+}
+
+/* * ============================== */
+/* * ============ ASIDE =========== */
+/* * ============================== */
+
+aside {
+	min-width: 30%;
+	margin: 40px 20px 20px 0;
+	height: 100%;
+	background: #1D2F3D;
+	padding: 20px;
+	border-radius: 3px;
+	position: sticky;
+	top: 20px;
+}
+
+aside .titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #f2f2f2;
+}
+
+aside .indice a {
+	display: block;
+	margin-bottom: 10px;
+	color: #48daff;
+}
+
+/* * ============================== */
+/* * ========== FOOTER ============ */
+/* * ============================== */
+.contenedor-imagen1 {
+	background-image: url(https://lh3.googleusercontent.com/yPnuvG4rbpNDIPOsIogphJ7CyeLmo40t2uaRsjDKJyf2-zqffQOBEUUMgla9EgJkB3x8cnvZ_Bkd6g7GGgf7OKBKfm1avckCMVl-Pk43t6PgCrWseio2btUVRf0wEDTKwQWKuTp3obgDOFQgGSPxbMt6Jh8xWY9iIVaqt7MV9e6xO4p220_8QbxFExKiJPgR1r1TR3857iG79PViBm0yhGcq0xHVxh4OrnstGQnN5FVsegLHt_FbcJhMSquixyifJ0Owc6xJwx7_Xhq4UiU7gH-tav4k6bU3PUiAR9qrbSRNM7YJfDz6Hn14m6S_zd5ER-Gm0l4n_aKtIBBjQHIuElBTiLLs4vaa-H4XO7fJrSTDaPypu9eloz6OPUzxv-12Eh7Xb9iaDxUwpNQflZX5I0WcbSEjWBPGeTuSPAZjHM0_uMmszi888dCa6K04t9wCscxW8jCwSZA8Peel1hq4JvffzsckdCgqjydpNXkUWwZF74kEHru-j9OsL9qPhjO3-bBR9xZcLLSK8R4JaCa856A2wXNWMZzXAeGsFfW9IeTqkpGZmo-ZXNwBKE_RSNJ9f-s-GmzdzQvx8W_lostvYf2QagHCSaWkZN_UVaVpbZnWpbS6IMnq9wAbSFzi_nGOc3RkGfnMzPqDMaVoQcguV9uYZgElwjfylBmqSlC1_zTV-0Zayw0BGVFqbw0MsqQbKzFuBtVeR3c5IVGulSQ1Sk9J-V8TpFPrCYE5HA4WJHEBZoj9UDUEgDXJR0RcqhNPZgH8V37__CD_4wrXS3p3wiY0Pat-AvHpzCBGtQe7FqQoB4HRdqpeEBdRWlz7kC5Y5494ii7vKHR8qK390Z2NuDqHw1YhHHQrJuZOSm2E1NiG-sJMLBuTs2rgytrZcCCBdkJ9g2rnxuioOSxBoLF0HVTbWRmFJrki2cId8jdPxEo8LvCnhzJMsJfu2j2KeqbdKvmh-s9cJdGeoYC3akLoqYgUM8wY86m-s20lx4lXHVCB-lK-aA2aSqQXyM-1i8mHDPEnxV77OP5BoLNEy_VcPVltq4iZMPckaeJeENDpgVdjafLOTmTkPyc1z_0=w1080-h611-s-no?authuser=0);
+	background-size: 100%;
+	color: #48daff;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
+	font-size: medium;
+}
+
+.contenedor-imagen1 img {
+	width: 20%;
+	height: 20%;
+	padding: 20px;
+	border-radius: 130px;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
+
+
+/* * ============================== */
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px) {
+	.navbar .contenedor {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}
+
+	.navbar a {
+		width: auto;
+		flex: 1;
+	}
+
+	.contenedor-imagen {
+		height: 50vh;
+	}
+
+	main .contenedor {
+		flex-direction: column;
+	}
+}
